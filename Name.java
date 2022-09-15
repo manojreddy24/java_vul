@@ -63,7 +63,7 @@
 }
 */
 
-public class Main
+/*public class Main
 {
 	public static void main(String[] args) {
 	  boolean b = true;
@@ -75,3 +75,35 @@ public class Main
 	}
 }
 
+*/
+
+
+
+package org.example;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+public class Name {
+    public static void main(String[] args) throws IOException {
+
+        String s1="manoj";
+        String s2 = "reddy";
+        System.out.println(s1==s2);
+
+        boolean v = true;
+        while(v){System.out.println("1");}
+
+
+        File file = new File("C:\\demo\\demofile.txt");
+        FileInputStream fis=new FileInputStream(file);     //opens a connection to an actual file
+        System.out.println("file content: ");
+        int r=0;
+        while((r=fis.read())!=-1)
+        {
+            System.out.print((char)r);      //prints the content of the file
+        }
+    }
+}
